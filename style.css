@@ -57,10 +57,10 @@ header section {
 .header--bio-container {
     width: 60%;
     margin-top: 30px;
-    min-width: 260px;
+    min-width: 300px;
     align-self: center;
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .header--bio-container h2 {
