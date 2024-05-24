@@ -44,24 +44,24 @@ header section {
     align-self: center;
     text-align: center;
     min-width: 300px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 
 }
 
 .header--name-container img {
     width: 60%;
-    margin-top: 40px;
+    margin-top: 20px;
     max-height: 200px;
     border-radius: 30px;
     
 }
 .header--bio-container {
     width: 60%;
-    margin-top: 30px;
+    margin-top: 5px;
     min-width: 300px;
     align-self: center;
     text-align: justify;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .header--bio-container h2 {
