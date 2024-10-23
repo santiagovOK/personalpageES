@@ -2,7 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    max-height: 1100px;
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: rgba(47, 53, 92, 1);
+    }
+    50% {
+        border-color: rgba(47, 53, 92, 0.5);
+    }
+    100% {
+        border-color: rgba(47, 53, 92, 1);
+    }
 }
 
 /* :root {
@@ -27,7 +38,9 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 320px;  
+    min-width: 320px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 header section {
@@ -43,24 +56,24 @@ header section {
     align-self: center;
     text-align: center;
     min-width: 300px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 
 }
 
 .header--name-container img {
     width: 60%;
-    margin-top: 40px;
+    margin-top: 20px;
     max-height: 200px;
     border-radius: 30px;
-    
+    border: 3px rgba(47, 53, 92, 1) solid;
 }
 .header--bio-container {
     width: 60%;
-    margin-top: 30px;
+    margin-top: 5px;
     min-width: 300px;
     align-self: center;
     text-align: justify;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .header--bio-container h2 {
@@ -77,18 +90,19 @@ header section {
     justify-content: center;
     align-self: center;
     min-width: 200px;
-    background-color: #E8E6E3;
-    padding: 5px;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding: 9px;
     margin-top: 20px;
     border-radius: 30px;
-    
+    border: solid 6px rgba(47, 53, 92, 1);
+    animation: borderAnimation 1s infinite;
+    animation-direction: normal;
 }
 
 .header--social-container .twitter {    
     display: inline-block;
     width: 30px;
     height: 30px;
-    margin-left: 10px;
     background-image: url(assets/icons/x-logo.svg);
     background-size: cover;
     background-position: center;
@@ -164,6 +178,48 @@ header section {
     background-color: #e0e0e0; 
     transform: scale(0.85); 
 }
+
+.header--social-container .facebook {    
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url(assets/icons/facebook-icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header--social-container .facebook:hover {
+    transform: scale(1.15);
+}
+
+.header--social-container .facebook:active {
+    background-color: #e0e0e0; 
+    transform: scale(0.85); 
+}
+
+.header--social-container .youtube {    
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url(assets/icons/youtube-icon.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header--social-container .youtube:hover {
+    transform: scale(1.15);
+}
+
+.header--social-container .youtube:active {
+    background-color: #e0e0e0; 
+    transform: scale(0.85); 
+}
+
+
 
 .header--language-container {
     display: flex;
